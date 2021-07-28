@@ -1,0 +1,12 @@
+/.idea
+__pycache__
+*/__pycache__
+
+/relevant tutorials
+/checkpoints
+/output/*/v*
+/data
+
+_notes
+Pipfile
+Pipfile.lock
