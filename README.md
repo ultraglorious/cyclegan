@@ -1,2 +1,5 @@
 # cyclegan-learning
 My first attempt to implement a CycleGAN in TensorFlow based on Jun-Yan Zhu, Taesung Park, Phillip Isola, and Alexei A. Efros. "Unpaired Image-to-Image Translation using Cycle-Consistent Adversarial Networks", in IEEE International Conference on Computer Vision (ICCV), 2017.  See: https://junyanz.github.io/CycleGAN/ 
+
+## Current status
+Model may work, but iterations take quite a long time so it's hard to verify.  I do not think the slowness is related to a bug, but rather the very large increase in parameters when the residual block concatenates its input rather than adds to it.  The paper does not make it clear which approach they chose (addition vs concatenation).
