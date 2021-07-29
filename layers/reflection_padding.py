@@ -8,7 +8,7 @@ class ReflectionPadding2D(tf.keras.layers.Layer):
         Implements reflection padding for Conv2D layer.
         Modelled after https://stackoverflow.com/questions/50677544/reflection-padding-conv2d with changes.
 
-        The padding might lead to a output with a slightly different shape if the kernel is even.
+        The padding might lead to an output with a slightly different shape if the kernel is even.
 
         Parameters
         ----------

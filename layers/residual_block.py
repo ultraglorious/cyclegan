@@ -37,7 +37,7 @@ class ResidualBlock(tf.keras.layers.Layer):
         if self.conv3 is not None:
             x = self.conv3(x)
         x += inputs
-        # Try depth-concatenating here instead of adding and see how that does.
-        # Depth-concatenating seems superior but the number of trainable parameters increases a lot.
+        # TODO: Try depth-concatenating here instead of adding and see how that does.
+        #  Depth-concatenating seems superior but the number of trainable parameters increases a lot.
         # x = tf.keras.layers.Concatenate()([x, inputs])
         return tf.keras.activations.relu(x)

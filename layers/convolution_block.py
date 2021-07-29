@@ -6,7 +6,7 @@ from tensorflow_addons.layers import InstanceNormalization
 
 class ConvolutionBlock(tf.keras.layers.Layer):
 
-    """Creates composite Conv2D(Transpose)-BatchNormalization-(Leaky)ReLU layer."""
+    """Creates composite Conv2D(Transpose)-InstanceNormalization-(Leaky)ReLU layer."""
 
     def __init__(self, kernel_size: int, stride: int, n_filters: int,
                  reflect_padding: bool = False,

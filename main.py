@@ -9,6 +9,7 @@ from layers import ConvolutionBlock, ResidualBlock
 
 
 if __name__ == "__main__":
+    """Primarily a testing ground for the project."""
     train_horses, train_zebras, test_horses, test_zebras = get_data.load()
     sample_horse = next(iter(train_horses))
     sample_zebra = next(iter(train_zebras))
